@@ -1,0 +1,66 @@
+.blog-page__hero { padding-top: 120px; }
+
+.blog-page__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.blog-page__tag-btn {
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition: all 0.2s var(--ease);
+  font-family: var(--font-body);
+}
+.blog-page__tag-btn:hover { border-color: var(--border-strong); color: var(--text-primary); }
+.blog-page__tag-btn.active { background: var(--accent-muted); color: var(--accent); border-color: var(--accent); }
+
+.blog-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.blog-page__card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+  animation: fadeUp 0.5s var(--ease) both;
+}
+.blog-page__card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+
+.blog-page__skeleton { overflow: hidden; }
+
+.blog-page__card-img { height: 200px; overflow: hidden; }
+.blog-page__card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease); }
+.blog-page__card:hover .blog-page__card-img img { transform: scale(1.05); }
+
+.blog-page__card-body { padding: 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.blog-page__card-meta { display: flex; align-items: center; gap: 10px; }
+.blog-page__card-title { color: var(--text-primary); line-height: 1.35; }
+.blog-page__card-excerpt {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.65;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+  flex: 1;
+}
+.blog-page__card-date { font-size: 0.78rem; color: var(--text-tertiary); margin-top: auto; padding-top: 12px; border-top: 1px solid var(--border); }
+
+.blog-page__empty { padding: 60px; text-align: center; color: var(--text-secondary); }
+
+@media (max-width: 900px) { .blog-page__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .blog-page__grid { grid-template-columns: 1fr; } }
+
+@media (max-width: 768px) {
+  [class*="__hero"], .blog-post {
+    padding-top: 100px;
+  }
+}

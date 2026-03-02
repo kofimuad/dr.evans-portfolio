@@ -1,0 +1,161 @@
+.home__hero {
+  padding-top: 140px;
+  text-align: center;
+}
+.home__hero .display { max-width: 700px; margin: 16px auto; }
+.home__hero .display em { font-style: italic; color: var(--accent); }
+.home__hero-sub { max-width: 540px; margin: 20px auto; color: var(--text-secondary); }
+.home__hero-actions { display: flex; gap: 12px; justify-content: center; margin-top: 32px; flex-wrap: wrap; }
+
+/* Section header */
+.home__section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.home__see-all {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  color: var(--accent);
+  font-weight: 500;
+  transition: gap 0.2s var(--ease);
+}
+.home__see-all:hover { gap: 10px; }
+
+/* Featured card */
+.home__featured { padding-bottom: 0; }
+.home__featured-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  overflow: hidden;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.home__featured-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+
+.home__featured-img { overflow: hidden; min-height: 360px; }
+.home__featured-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease); }
+.home__featured-card:hover .home__featured-img img { transform: scale(1.03); }
+
+.home__featured-body { padding: 40px; display: flex; flex-direction: column; justify-content: center; gap: 16px; }
+.home__featured-meta { display: flex; align-items: center; gap: 12px; }
+.home__featured-title { color: var(--text-primary); }
+.home__featured-excerpt { color: var(--text-secondary); font-weight: 300; line-height: 1.7; }
+.home__featured-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 16px; }
+
+/* Posts grid */
+.home__posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.home__post-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.home__post-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+
+.home__post-skeleton { overflow: hidden; }
+
+.home__post-img { overflow: hidden; height: 180px; }
+.home__post-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease); }
+.home__post-card:hover .home__post-img img { transform: scale(1.05); }
+
+.home__post-body { padding: 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.home__post-meta { display: flex; align-items: center; gap: 8px; }
+.home__post-title { color: var(--text-primary); line-height: 1.35; }
+.home__post-excerpt { color: var(--text-secondary); font-size: 0.875rem; line-height: 1.6; flex: 1;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.home__post-footer { display: flex; justify-content: space-between; margin-top: auto; padding-top: 12px; border-top: 1px solid var(--border); }
+
+/* CTA */
+.home__cta { padding: 60px 0 80px; }
+.home__cta-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 40px 48px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .home__featured-card { grid-template-columns: 1fr; }
+  .home__featured-img { min-height: 240px; }
+  .home__featured-body { padding: 28px; }
+  .home__posts-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .home__posts-grid { grid-template-columns: 1fr; }
+  .home__cta-card { padding: 28px 24px; }
+}
+
+/* ── Mobile fixes ──────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .home__hero {
+    padding-top: calc(var(--navbar-h) + 32px);
+  }
+
+  /* Featured card — add horizontal margin and border radius */
+  .home__featured {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .home__featured-card {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+
+  /* Section headers need left padding to match container */
+  .home__section-header {
+    padding: 0 4px;
+  }
+
+  /* CTA card padding */
+  .home__cta-card {
+    padding: 24px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Ensure caption clears navbar on all screen sizes */
+
+/* Caption spacing + display size on mobile */
+@media (max-width: 768px) {
+  .home__hero .caption {
+    margin-top: 12px;
+    display: block;
+  }
+  .home__hero .display {
+    font-size: 3.4rem;
+    margin: 10px auto 16px;
+    line-height: 1.05;
+  }
+  .home__hero-sub {
+    font-size: 1rem;
+    margin: 0 auto 20px;
+  }
+  .home__hero-actions {
+    margin-top: 0;
+  }
+  .home__hero {
+    padding-top: calc(var(--navbar-h) + 60px);
+    padding-bottom: 48px;
+  }
+}
+
+/* Tighten section gaps on mobile */
+@media (max-width: 768px) {
+  .home__posts.section { padding: 40px 0; }
+  .home__cta { padding: 32px 0 48px; }
+  .home__featured { padding-bottom: 0; }
+  .section { padding: 48px 0; }
+}

@@ -1,0 +1,76 @@
+.about-page__hero { padding-top: 120px; }
+
+.about-page__layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 48px;
+  align-items: start;
+}
+
+.about-page__name { margin: 12px 0 20px; }
+
+.about-page__bio {
+  color: var(--text-secondary);
+  font-weight: 300;
+  line-height: 1.8;
+  max-width: 560px;
+}
+
+.about-page__section { margin-top: 36px; }
+
+.about-page__edu-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.about-page__edu-item:last-child { border-bottom: none; }
+
+/* Profile card */
+.about-page__profile-card {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  position: sticky;
+  top: 100px;
+}
+
+.about-page__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border-strong);
+}
+
+.about-page__avatar-placeholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--accent-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  border: 3px solid var(--border-strong);
+}
+
+.about-page__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+@media (max-width: 800px) {
+  .about-page__layout { grid-template-columns: 1fr; }
+  .about-page__profile-card { position: static; }
+}
+
+@media (max-width: 768px) {
+  [class*="__hero"], .blog-post {
+    padding-top: 100px;
+  }
+}
