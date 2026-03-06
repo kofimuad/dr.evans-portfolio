@@ -33,7 +33,7 @@ export default function Blog() {
           <p className="caption fade-up">Blog</p>
           <h1 className="heading-1 fade-up-1">General Thoughts</h1>
           <p className="body-lg fade-up-2" style={{ color: 'var(--text-secondary)', maxWidth: 500, marginTop: 12 }}>
-            Long-form writing on wood science, forestry, construction, and industrialization.
+            A space to think out loud — about science, nature, and the materials that shape our world.
           </p>
 
           {allTags.length > 0 && (
