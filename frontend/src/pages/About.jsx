@@ -62,7 +62,7 @@ export default function About() {
                     </p>
                   </div>
                 )}
-                <p className="heading-3" style={{ textAlign: 'center' }}>{content.name || 'Dr. Evans Adjei'}</p>
+                <p className="heading-3" style={{ textAlign: 'center' }}>{content.name || 'Evans Antwi Adjei'}</p>
                 <p className="body-sm" style={{ color: 'var(--text-secondary)', textAlign: 'center' }}>
                   {content.role || 'Wood Science Researcher'}
                 </p>

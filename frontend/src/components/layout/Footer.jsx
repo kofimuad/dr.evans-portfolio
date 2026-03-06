@@ -7,8 +7,8 @@ export default function Footer() {
       <div className="footer__inner container-wide">
         <div className="footer__brand">
           <span className="footer__icon">🌲</span>
-          <span className="footer__name">Evans Adjei</span>
-          <p className="footer__tagline">Exploring the world through wood.</p>
+          <span className="footer__name">Evans Antwi Adjei</span>
+          <p className="footer__tagline">Understanding our environmental footprint through life cycle assessment.</p>
         </div>
 
         <div className="footer__links">
@@ -28,7 +28,7 @@ export default function Footer() {
       </div>
 
       <div className="footer__bottom container-wide">
-        <span>© {new Date().getFullYear()} Evans Adjei. All rights reserved.</span>
+        <span>© {new Date().getFullYear()} Evans Antwi Adjei. All rights reserved.</span>
       </div>
     </footer>
   );

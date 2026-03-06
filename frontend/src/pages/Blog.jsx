@@ -30,8 +30,8 @@ export default function Blog() {
     <main className="blog-page">
       <section className="blog-page__hero section">
         <div className="container">
-          <p className="caption fade-up">Writing</p>
-          <h1 className="heading-1 fade-up-1">Field Notes & Research</h1>
+          <p className="caption fade-up">Blog</p>
+          <h1 className="heading-1 fade-up-1">General Thoughts</h1>
           <p className="body-lg fade-up-2" style={{ color: 'var(--text-secondary)', maxWidth: 500, marginTop: 12 }}>
             Long-form writing on wood science, forestry, construction, and industrialization.
           </p>

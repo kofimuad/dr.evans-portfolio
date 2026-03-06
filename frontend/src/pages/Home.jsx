@@ -38,12 +38,12 @@ export default function Home() {
       {/* Hero */}
       <section className="home__hero section">
         <div className="container">
-          <p className="caption fade-up">Wood Science & Forestry Research</p>
+          <p className="caption fade-up">Life Cycle Assessment & Sustainability</p>
           <h1 className="display fade-up-1">
-            Understanding the world <em>through wood.</em>
+            Understanding our environmental footprint <em>through life cycle assessment.</em>
           </h1>
           <p className="body-lg home__hero-sub fade-up-2">
-            From ancient forests to modern construction — exploring how wood shapes industry, architecture, and our planet.
+            From raw materials to end of life — mapping the environmental impact of products, systems, and decisions that shape our planet.
           </p>
           <div className="home__hero-actions fade-up-3">
             <Link to="/blog" className="btn btn-primary">Read the blog <ArrowIcon /></Link>
@@ -151,7 +151,7 @@ export default function Home() {
             <div className="home__cta-text">
               <h3 className="heading-2">Explore the research</h3>
               <p className="body" style={{ color: 'var(--text-secondary)' }}>
-                Peer-reviewed papers on wood science, forestry, and industrialization.
+                Peer-reviewed papers on life cycle assessment, sustainability, and environmental impact.
               </p>
             </div>
             <Link to="/research" className="btn btn-primary">

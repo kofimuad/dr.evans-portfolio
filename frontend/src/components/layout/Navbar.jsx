@@ -54,7 +54,7 @@ export default function Navbar() {
       <nav className="navbar__inner container-wide">
         <Link to="/" className="navbar__brand">
           <span className="navbar__brand-icon">🌲</span>
-          <span className="navbar__brand-name">Evans Adjei</span>
+          <span className="navbar__brand-name">Evans Antwi Adjei</span>
         </Link>
 
         <ul className="navbar__links">

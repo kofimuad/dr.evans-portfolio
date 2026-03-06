@@ -79,7 +79,7 @@ export default function Social() {
       <section className="social-page__hero section">
         <div className="container">
           <p className="caption fade-up">Social</p>
-          <h1 className="heading-1 fade-up-1">Thoughts from the Field</h1>
+          <h1 className="heading-1 fade-up-1">Thoughts from theRead</h1>
           <p className="body-lg fade-up-2" style={{ color: 'var(--text-secondary)', maxWidth: 500, marginTop: 12 }}>
             Selected posts and threads from{' '}
             <a href={`https://twitter.com/${TWITTER_HANDLE}`} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>
